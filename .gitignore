@@ -1,8 +1,28 @@
+# Raw data (too big, downloaded by user)
 *.csv
 *.zip
-results/
+ieee_csvs/
+sparkov_csvs/
+
+# Python intermediates
 __pycache__/
 *.pyc
 .DS_Store
-ieee_csvs/
-sparkov_csvs/
+
+# Compiled latex (paper folder, if it gets here)
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+
+# But DO include results CSVs that back the paper's numbers
+!results/results.csv
+!results/multiseed_results.csv
+!results/multiseed_summary_aucpr.csv
+!results/multiseed_summary_aucroc.csv
+!results/alpha_sweep.csv
+!results/alpha_sweep_summary_aucpr.csv
+!results/alpha_sweep_summary_aucroc.csv
+!results/pr_curve.png
+!results/.gitkeep
